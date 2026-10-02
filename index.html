@@ -228,18 +228,24 @@ header.scrolled{background:rgba(13,27,15,0.95);backdrop-filter:blur(12px);-webki
 .frow button{display:inline-flex;align-items:center;gap:0.5rem;background:var(--forest);color:#fff;font-family:var(--ff-body);font-weight:500;font-size:0.88rem;padding:0.85rem 1.65rem;border-radius:30px;transition:background 0.2s,transform 0.15s;align-self:flex-start}
 .frow button:hover{background:var(--forest-mid)}
 .frow button:active{transform:scale(0.97)}
-.records-form{background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:1.5rem;border:1px solid rgba(255,255,255,0.12);margin-top:1.5rem}
-.records-form h3{font-family:var(--ff-display);font-size:1.1rem;color:var(--cream);margin-bottom:1rem}
-.rfrow{display:flex;flex-direction:column;gap:0.7rem}
-.rfrow input,.rfrow textarea,.rfrow select{width:100%;padding:0.82rem 0.95rem;border:1px solid rgba(255,255,255,0.18);border-radius:var(--radius-sm);font-family:var(--ff-body);font-size:0.9rem;background:rgba(255,255,255,0.07);color:#fff;transition:border-color 0.2s,background 0.2s;outline:none}
-.rfrow input::placeholder,.rfrow textarea::placeholder{color:rgba(255,255,255,0.4)}
-.rfrow input:focus,.rfrow textarea:focus,.rfrow select:focus{border-color:var(--gold);background:rgba(255,255,255,0.1)}
-.rfrow select{color:rgba(255,255,255,0.85)}
-.rfrow select option{background:var(--forest);color:#fff}
-.rfrow textarea{resize:vertical;min-height:100px}
-.rfrow button{display:inline-flex;align-items:center;gap:0.5rem;background:var(--gold);color:var(--ink);font-family:var(--ff-body);font-weight:500;font-size:0.88rem;padding:0.85rem 1.65rem;border-radius:30px;transition:background 0.2s,transform 0.15s;align-self:flex-start;border:none;cursor:pointer}
-.rfrow button:hover{background:var(--gold-light)}
-.rfrow button:active{transform:scale(0.97)}
+ 
+.records-category-list{display:grid;grid-template-columns:1fr;gap:.55rem;margin-top:1.1rem}.records-category{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1rem;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-sm);color:rgba(255,255,255,.86);font-size:.84rem;transition:background .2s,border-color .2s}.records-category:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.18)}.records-category span:last-child{color:rgba(255,255,255,.43);font-size:.74rem;white-space:nowrap}.records-request-box{display:flex;flex-direction:column;gap:1rem;margin-top:1.25rem;padding:1rem;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-sm);background:rgba(255,255,255,.035)}.records-request-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--gold);color:var(--ink);font-weight:600;font-size:.82rem;padding:.75rem 1.15rem;border-radius:30px}.records-form-inner{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.1)}.records-form-inner h4{font-family:var(--ff-display);font-size:1.05rem;color:var(--cream);margin-bottom:.4rem}
+@media(min-width:700px){.records-category-list{grid-template-columns:1fr 1fr}.records-request-box{flex-direction:row;align-items:center;justify-content:space-between}}
+.records-center{background:rgba(255,255,255,0.06);border-radius:var(--radius-lg);padding:1.5rem;border:1px solid rgba(255,255,255,0.12);margin-top:1.5rem}
+.records-center h3{font-family:var(--ff-display);font-size:1.25rem;color:var(--cream);margin-bottom:.45rem}
+.records-intro{font-size:.82rem;color:rgba(255,255,255,.58);line-height:1.65;margin-bottom:1.25rem}
+.record-section{border-top:1px solid rgba(255,255,255,.1);padding-top:1.1rem;margin-top:1.1rem}
+.record-section-title{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold-light);font-weight:600;margin-bottom:.75rem}
+.rfrow{display:flex;flex-direction:column;gap:.7rem}.rfgrid{display:grid;grid-template-columns:1fr;gap:.7rem}
+.rfrow input,.rfrow textarea,.rfrow select{width:100%;padding:.82rem .95rem;border:1px solid rgba(255,255,255,.18);border-radius:var(--radius-sm);font-family:var(--ff-body);font-size:.9rem;background:rgba(255,255,255,.07);color:#fff;transition:border-color .2s,background .2s;outline:none}
+.rfrow input::placeholder,.rfrow textarea::placeholder{color:rgba(255,255,255,.4)}
+.rfrow input:focus,.rfrow textarea:focus,.rfrow select:focus{border-color:var(--gold);background:rgba(255,255,255,.1)}
+.rfrow select{color:rgba(255,255,255,.85)}.rfrow select option{background:var(--forest);color:#fff}
+.rfrow textarea{resize:vertical;min-height:120px}.rf-label{display:block;font-size:.72rem;color:rgba(255,255,255,.62);margin:0 0 .35rem .1rem}
+.rf-options{display:grid;grid-template-columns:1fr;gap:.45rem}.rf-option{display:flex;align-items:flex-start;gap:.5rem;color:rgba(255,255,255,.78);font-size:.8rem;line-height:1.45}.rf-option input{width:auto;margin-top:.18rem;accent-color:var(--gold)}
+.rf-note{font-size:.75rem;color:rgba(255,255,255,.45);line-height:1.6;margin-top:.25rem}.rf-attestation{font-size:.76rem;color:rgba(255,255,255,.55);line-height:1.65;background:rgba(255,255,255,.035);border-radius:var(--radius-sm);padding:.8rem .9rem}
+.rf-signature{display:grid;grid-template-columns:1fr;gap:.7rem}.rfrow button{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:var(--ink);font-family:var(--ff-body);font-weight:500;font-size:.88rem;padding:.85rem 1.65rem;border-radius:30px;transition:background .2s,transform .15s;align-self:flex-start;border:none;cursor:pointer}.rfrow button:hover{background:var(--gold-light)}.rfrow button:active{transform:scale(.97)}
+@media(min-width:700px){.rfgrid{grid-template-columns:1fr 1fr}.rfgrid .full{grid-column:1 / -1}.rf-options{grid-template-columns:1fr 1fr}.rf-signature{grid-template-columns:1fr 180px}}
 #social{background:var(--parchment)}
 .social-card{display:flex;flex-direction:column;align-items:center;text-align:center;background:#fff;border-radius:var(--radius-lg);padding:2.2rem 1.5rem;border:1px solid rgba(0,0,0,0.07);max-width:560px;margin:0 auto}
 .fb-embed-wrap{width:100%;max-width:500px;margin:1.4rem auto 0;border-radius:var(--radius-md);overflow:hidden;border:1px solid rgba(0,0,0,0.08);min-height:280px;background:var(--parchment)}
@@ -700,35 +706,72 @@ footer{background:var(--ink);padding:3rem 1.25rem 2rem}
   </div>
   <!-- END BUDGET DOCUMENTS -->
 
-  <div class="records-form reveal">
-    <h3><i class="fa-solid fa-file-magnifying-glass" style="margin-right:0.5rem;color:var(--gold)"></i>Submit a Records Request</h3>
-    <form class="rfrow" id="recordsForm" data-formsubmit-endpoint="https://formsubmit.co/ajax/debbie@mccrearycounty.com">
-      <input type="text" name="full_name" placeholder="Your Full Name" required autocomplete="name">
-      <input type="email" name="email" placeholder="Your Email Address" required autocomplete="email">
-      <input type="tel" name="phone" placeholder="Phone Number (optional)" autocomplete="tel">
-      <select name="record_type" required>
-        <option value="" disabled selected>Type of Record Requested</option>
-        <option value="Meeting Minutes">Meeting Minutes</option>
-        <option value="Ordinance / Resolution">Ordinance / Resolution</option>
-        <option value="Budget / Financial Records">Budget / Financial Records</option>
-        <option value="Contracts / Agreements">Contracts / Agreements</option>
-        <option value="Personnel Records">Personnel Records</option>
-        <option value="Other">Other</option>
-      </select>
-      <input type="text" name="record_date_or_period" placeholder="Approximate Date or Time Period of Record">
-      <textarea name="description" rows="4" placeholder="Please describe the record(s) you are requesting in detail&hellip;" required></textarea>
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-      <input type="hidden" name="_subject" value="Open Records Request &mdash; McCreary County Fiscal Court">
-      <button type="submit" id="recordsSubmitBtn"><i class="fa-solid fa-paper-plane"></i> Submit Request</button>
-      <div class="form-success" id="recordsSuccess" style="background:rgba(74,124,82,0.18);color:#bfe6c4;border:1px solid rgba(74,124,82,0.4)">
-        <i class="fa-solid fa-circle-check"></i>
-        <span>Thank you &mdash; your records request has been sent. Our office will follow up with you soon.</span>
+  <div class="records-center reveal">
+    <h3><i class="fa-solid fa-folder-open" style="margin-right:.5rem;color:var(--gold)"></i>Records Center</h3>
+    <p class="records-intro">Browse records by department or submit an Open Records Request if the document you need is not listed.</p>
+
+    <div class="records-category-list">
+      <div class="records-category"><span>Annual Reports</span><span>No documents</span></div>
+      <div class="records-category"><span>Animal Services</span><span>No documents</span></div>
+      <div class="records-category"><span>Assisted Housing</span><span>No documents</span></div>
+      <div class="records-category"><span>Building Department</span><span>No documents</span></div>
+      <div class="records-category"><span>Community Services</span><span>No documents</span></div>
+      <div class="records-category"><span>County Coroner</span><span>No documents</span></div>
+      <div class="records-category"><span>Archived Bids</span><span>No documents</span></div>
+      <div class="records-category"><span>Emergency Management</span><span>No documents</span></div>
+      <div class="records-category"><span>Ethics Commission</span><span>No documents</span></div>
+      <div class="records-category"><span>Finance</span><span>14 documents</span></div>
+      <div class="records-category"><span>Fiscal Court</span><span>No documents</span></div>
+      <div class="records-category"><span>Infrastructure</span><span>No documents</span></div>
+      <div class="records-category"><span>Occupational Licensing</span><span>No documents</span></div>
+      <div class="records-category"><span>Open Records Requests</span><span>No documents</span></div>
+      <div class="records-category"><span>Parks Department</span><span>No documents</span></div>
+      <div class="records-category"><span>Planning &amp; Zoning</span><span>No documents</span></div>
+      <div class="records-category"><span>Public Works</span><span>No documents</span></div>
+      <div class="records-category"><span>Solid Waste</span><span>No documents</span></div>
+    </div>
+
+    <div class="records-request-box">
+      <div>
+        <div class="record-section-title">Open Records Requests</div>
+        <p class="rf-note">Can't find the record you're looking for? Submit a request to the McCreary County Fiscal Court.</p>
       </div>
-      <div class="form-error" id="recordsError" style="background:rgba(220,80,80,0.15);color:#ffc9c9;border:1px solid rgba(220,80,80,0.35)">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-        <span>Sorry, something went wrong sending your request. Please try again or email debbie@mccrearycounty.com directly.</span>
-      </div>
-    </form>
+      <a href="#open-records-form" class="records-request-btn"><i class="fa-solid fa-file-magnifying-glass"></i> Submit a Records Request</a>
+    </div>
+
+    <div class="records-form-inner" id="open-records-form">
+      <h4>Open Records Request</h4>
+      <p class="records-intro">Use this form to request public records from the McCreary County Fiscal Court. Please provide enough detail for our office to identify the records you are seeking.</p>
+      <form class="rfrow" id="recordsForm" data-formsubmit-endpoint="https://formsubmit.co/ajax/debbie@mccrearycounty.com">
+        <div class="record-section">
+          <div class="record-section-title">Contact Information</div>
+          <div class="rfgrid">
+            <div><label class="rf-label" for="recordFullName">Name</label><input id="recordFullName" type="text" name="full_name" placeholder="Your Full Name" required autocomplete="name"></div>
+            <div><label class="rf-label" for="recordDate">Date of Request</label><input id="recordDate" type="date" name="request_date" required></div>
+            <div><label class="rf-label" for="recordAddress">Street Address</label><input id="recordAddress" type="text" name="street_address" placeholder="Street Address" autocomplete="street-address"></div>
+            <div><label class="rf-label" for="recordCity">City</label><input id="recordCity" type="text" name="city" placeholder="City" autocomplete="address-level2"></div>
+            <div><label class="rf-label" for="recordState">State</label><input id="recordState" type="text" name="state" placeholder="KY" value="KY" autocomplete="address-level1"></div>
+            <div><label class="rf-label" for="recordZip">ZIP Code</label><input id="recordZip" type="text" name="zip_code" placeholder="ZIP Code" autocomplete="postal-code"></div>
+            <div><label class="rf-label" for="recordEmail">E-Mail</label><input id="recordEmail" type="email" name="email" placeholder="Email Address" required autocomplete="email"></div>
+            <div><label class="rf-label" for="recordPhone">Phone</label><input id="recordPhone" type="tel" name="phone" placeholder="Phone Number (optional)" autocomplete="tel"></div>
+          </div>
+        </div>
+        <div class="record-section">
+          <div class="record-section-title">Records Requested</div>
+          <label class="rf-label" for="recordDescription">Please provide an itemized description of the records requested</label>
+          <textarea id="recordDescription" name="description" rows="5" placeholder="Please be as specific as possible. Include names, departments, dates, subjects, or other details that may help us locate the records." required></textarea>
+          <div class="rfgrid">
+            <div><label class="rf-label" for="recordType">Department / Record Category</label><select id="recordType" name="record_type" required><option value="" disabled selected>Select a category</option><option>Annual Reports</option><option>Animal Services</option><option>Assisted Housing</option><option>Building Department</option><option>Community Services</option><option>County Coroner</option><option>Archived Bids</option><option>Emergency Management</option><option>Ethics Commission</option><option>Finance</option><option>Fiscal Court</option><option>Infrastructure</option><option>Occupational Licensing</option><option>Open Records Requests</option><option>Parks Department</option><option>Planning &amp; Zoning</option><option>Public Works</option><option>Solid Waste</option><option>Other</option></select></div>
+            <div><label class="rf-label" for="recordPeriod">Approximate Date or Time Period</label><input id="recordPeriod" type="text" name="record_date_or_period" placeholder="Example: 2024–2025"></div>
+          </div>
+        </div>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="Open Records Request — McCreary County Fiscal Court">
+        <button type="submit" id="recordsSubmitBtn"><i class="fa-solid fa-paper-plane"></i> Submit Open Records Request</button>
+        <div class="form-success" id="recordsSuccess" style="background:rgba(74,124,82,.18);color:#bfe6c4;border:1px solid rgba(74,124,82,.4)"><i class="fa-solid fa-circle-check"></i><span>Thank you — your open records request has been sent. Our office will follow up with you soon.</span></div>
+        <div class="form-error" id="recordsError" style="background:rgba(220,80,80,.15);color:#ffc9c9;border:1px solid rgba(220,80,80,.35)"><i class="fa-solid fa-triangle-exclamation"></i><span>Sorry, something went wrong sending your request. Please try again or email debbie@mccrearycounty.com directly.</span></div>
+      </form>
+    </div>
   </div>
 </div>
 </div>
